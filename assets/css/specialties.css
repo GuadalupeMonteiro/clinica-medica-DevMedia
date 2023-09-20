@@ -1,0 +1,116 @@
+.links-specialties {
+    margin: 2rem auto 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links-specialties li a {
+    margin: 0 10px;
+    color: #000;
+    border-bottom: 2px solid #00cad1;
+    transition: .4s ease;
+}
+
+.links-specialties li a:hover {
+    color: #00cad1;
+    border-bottom-color: #004b4c;
+}
+
+.links-specialties ~ h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.table-section {
+    height: 100%;
+    padding: .5rem;
+    flex-direction: column;
+}
+
+.info h3 {
+    margin: 4rem auto 2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.info p {
+    max-width: 60rem;
+    text-align: center;
+}
+
+.table-wrapper {
+    width: 95%;
+    max-width: 1024px;
+    height: 240px;
+    margin: 2rem auto;
+}
+
+.table-wrapper img {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.table-wrapper table {
+    width: 60%;
+    height: 100%;
+    border-spacing: 0;
+}
+
+thead tr {
+    background-color: #00cad1;
+}
+
+thead tr th {
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+}
+
+tbody tr {
+    font-weight: 500;
+    color: #585757;
+    background-color: #f1f1f1;
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background-color: #cdcdcd;
+}
+
+tbody tr td {
+    padding: 1rem;
+    text-align: left;
+}
+
+footer {
+    margin-top: 8rem;
+}
+
+@media (max-width: 860px) {
+    .table-wrapper img {
+        display: none;
+    }
+
+    .table-wrapper table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .links-specialties {
+        margin: 5rem auto;
+    }
+
+    .links-specialties li {
+        margin: 10px;
+    }
+
+    tbody tr td {
+        font-size: 1.2rem;
+    }
+
+    .fisio {
+        margin-top: 2rem;
+    }
+}

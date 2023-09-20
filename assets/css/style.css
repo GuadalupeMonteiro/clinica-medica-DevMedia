@@ -1,0 +1,140 @@
+header {
+    width: 100vw;
+    height: 75vh;
+    background: url(../img/recepcao.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header h1 {
+    margin: 1.5rem;
+    font-size: clamp(3rem, 4vw + .1rem, 4.5rem);
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 55px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+section {
+    margin-top: 4rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.content p {
+    max-width: 65rem;
+    margin: 0 auto 2rem;
+}
+
+.list {
+    margin-left: -3rem;
+}
+
+.list h3 {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.list ul {
+    margin-left: 9rem;
+    text-align: left;
+}
+
+.list ul li {
+    list-style: disc;
+    line-height: 2.2rem;
+}
+
+figure {
+    width: 40%;
+    max-width: 60rem;
+    margin: 2rem;
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    padding: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.link-wrapper {
+    margin: 3rem auto 5rem;
+}
+
+.link-wrapper a {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #00cad1;
+    transition: .4s ease;
+}
+
+.link-wrapper a:hover {
+    background-color: #004b4c;
+}
+
+.contact-wrapper p {
+    margin-bottom: 2rem;
+}
+
+.iframe-wrapper {
+    max-width: 95rem;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    header h1 {
+        line-height: 40px;
+    }
+
+    .container-list {
+        margin: 4rem auto 3rem;
+    }
+
+    .img-wrapper img {
+        display: none;
+    }
+
+    .list {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list ul {
+        width: 100%;
+    }
+
+    .doctors-img-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:560px) {
+    figure,
+    figure img {
+        width: 100%;
+    }
+}
